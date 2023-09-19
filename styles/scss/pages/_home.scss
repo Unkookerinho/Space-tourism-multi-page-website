@@ -30,7 +30,7 @@
       max-width: 20rem;
 
       opacity: 0;
-      transform: translateX(-5rem);
+      transform: translateX(-10rem);
 
       transition: transform 0.5s, opacity 0.5s;
 
@@ -43,7 +43,7 @@
       grid-area: main__button;
 
       opacity: 0;
-      transform: translateX(5rem);
+      transform: translateX(10rem);
 
       transition: transform 0.5s, opacity 0.5s;
     }
