@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Space tourism website</title>
+    <!-- LINK FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <!-- LINK FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@300;400;600&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="styles/css/style.min.css" />
+  </head>
+  <body class="destination">
+    <!-- HEADER -->
+    <header>
+      <!-- LOGO -->
+      <a href="index.html"
+        ><img class="logo" src="assets/shared/logo.svg" alt="Logo"
+      /></a>
+      <!-- NAVBAR -->
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="fs-300 fw-thin ff-sans-cond ls-500 uppercase clr-white"
+              ><span class="fw-bold">00</span>Home</a
+            >
+          </li>
+          <li class="active">
+            <a
+              href="destination.html"
+              class="fs-300 fw-thin ff-sans-cond ls-500 uppercase clr-white"
+              ><span class="fw-bold">01</span>Destination</a
+            >
+          </li>
+          <li>
+            <a
+              href="crew.html"
+              class="fs-300 fw-thin ff-sans-cond ls-500 uppercase clr-white"
+              ><span class="fw-bold">02</span>Crew</a
+            >
+          </li>
+          <li>
+            <a
+              href="technology.html"
+              class="fs-300 fw-thin ff-sans-cond ls-500 uppercase clr-white"
+              ><span class="fw-bold">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- MENU BUTTON -->
+      <button class="menu">
+        <span class="sr-only">Menu</span>
+      </button>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <!-- HEADER -->
+      <div class="main__header">
+        <h1
+          class="numbered uppercase fs-500 ff-sans-cond ls-400 fw-thin clr-white"
+        >
+          <span class="fw-bold">01</span>Pick your destination
+        </h1>
+      </div>
+      <div class="main__image">
+        <img
+          class="moon interactive-image planet active"
+          src="assets/destination/image-moon.webp"
+          alt="moon image"
+        />
+        <img
+          class="mars interactive-image planet"
+          src="assets/destination/image-mars.webp"
+          alt="mars image"
+        />
+        <img
+          class="europa interactive-image planet"
+          src="assets/destination/image-europa.webp"
+          alt="europa image"
+        />
+        <img
+          class="titan interactive-image planet"
+          src="assets/destination/image-titan.webp"
+          alt="titan image"
+        />
+      </div>
+      <!-- TEXT -->
+      <div class="main__text">
+        <!-- NAVIGATION -->
+        <div class="main__text-nav">
+          <ul>
+            <li
+              id="option"
+              class="clr-light fs-200 ff-sans-cond fw-thin ls-200 uppercase underline active"
+            >
+              Moon
+            </li>
+            <li
+              id="option"
+              class="clr-light fs-200 ff-sans-cond fw-thin ls-200 uppercase underline"
+            >
+              Mars
+            </li>
+            <li
+              id="option"
+              class="clr-light fs-200 ff-sans-cond fw-thin ls-200 uppercase underline"
+            >
+              Europa
+            </li>
+            <li
+              id="option"
+              class="clr-light fs-200 ff-sans-cond fw-thin ls-200 uppercase underline"
+            >
+              Titan
+            </li>
+          </ul>
+        </div>
+        <!-- PLANET DESCRIPTION -->
+        <div class="main__text-desc">
+          <h2
+            class="moon active interactive fs-800 ff-serif clr-white uppercase"
+          >
+            Moon
+          </h2>
+          <p class="moon active interactive lh-1">
+            See our planet as you’ve never seen it before. A perfect relaxing
+            trip away to help regain perspective and come back refreshed. While
+            you’re there, take in some history by visiting the Luna 2 and Apollo
+            11 landing sites.
+          </p>
+          <h2 class="mars interactive fs-800 ff-serif clr-white uppercase">
+            Mars
+          </h2>
+          <p class="mars interactive lh-1">
+            Don’t forget to pack your hiking boots. You’ll need them to tackle
+            Olympus Mons, the tallest planetary mountain in our solar system.
+            It’s two and a half times the size of Everest!
+          </p>
+          <h2 class="europa interactive fs-800 ff-serif clr-white uppercase">
+            Europa
+          </h2>
+          <p class="europa interactive lh-1">
+            The smallest of the four Galilean moons orbiting Jupiter, Europa is
+            a winter lover’s dream. With an icy surface, it’s perfect for a bit
+            of ice skating, curling, hockey, or simple relaxation in your snug
+            wintery cabin.
+          </p>
+          <h2 class="titan interactive fs-800 ff-serif clr-white uppercase">
+            Titan
+          </h2>
+          <p class="titan interactive lh-1">
+            The only moon known to have a dense atmosphere other than Earth,
+            Titan is a home away from home (just a few hundred degrees colder!).
+            As a bonus, you get striking views of the Rings of Saturn.
+          </p>
+        </div>
+        <hr />
+        <!-- PLANET DETAILS -->
+        <div class="main__text-details">
+          <!-- Distances -->
+          <div>
+            <h3 class="ff-sans-cond clr-light uppercase fs-100 ls-300 fw-thin">
+              Avg. distance
+            </h3>
+            <p
+              class="moon active interactive ff-serif fs-details clr-white uppercase"
+            >
+              384,400 km
+            </p>
+            <p class="mars interactive ff-serif fs-details clr-white uppercase">
+              225 mil. km
+            </p>
+            <p
+              class="europa interactive ff-serif fs-details clr-white uppercase"
+            >
+              628 mil. km
+            </p>
+            <p
+              class="titan interactive ff-serif fs-details clr-white uppercase"
+            >
+              1.6 bil. km
+            </p>
+          </div>
+          <!-- Travel times -->
+          <div>
+            <h3 class="ff-sans-cond clr-light uppercase fs-100 ls-300 fw-thin">
+              Est. travel time
+            </h3>
+            <p
+              class="moon active interactive ff-serif fs-details clr-white uppercase"
+            >
+              3 days
+            </p>
+            <p class="mars interactive ff-serif fs-details clr-white uppercase">
+              9 months
+            </p>
+            <p
+              class="europa interactive ff-serif fs-details clr-white uppercase"
+            >
+              3 years
+            </p>
+            <p
+              class="titan interactive ff-serif fs-details clr-white uppercase"
+            >
+              7 years
+            </p>
+          </div>
+        </div>
+
+        <!-- PLANET DETAILS -->
+      </div>
+    </main>
+
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/tabs.js"></script>
+  </body>
+</html>

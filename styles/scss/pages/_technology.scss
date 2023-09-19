@@ -1,0 +1,155 @@
+@use '../abstracts/mixins' as *;
+
+// Background image
+@include background(
+'technology', 
+'/assets/technology/background-technology-mobile.jpg', 
+'/assets/technology/background-technology-tablet.jpg', 
+'/assets/technology/background-technology-desktop.jpg'
+);
+
+.technology {
+  .main {
+    display: grid;
+    grid-template-areas:
+      'main__header'
+      'main__image'
+      'main__text';
+    justify-items: center;
+    gap: 2rem;
+    padding-block: 1rem;
+
+    &__header {
+      grid-area: main__header;
+    }
+
+    &__image {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.6rem;
+
+      &-nav {
+        ul {
+          display: flex;
+          gap: 1rem;
+        }
+      }
+
+      &-desc {
+        text-align: center;
+
+        max-width: 20.4375rem;
+
+        h2 {
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include media(medium) {
+  .technology {
+    .main {
+      gap: 2.75rem;
+      padding-block: 2rem;
+
+      &__header {
+        justify-self: start;
+        padding-left: 2rem;
+      }
+
+      &__text {
+        gap: 2.75rem;
+
+        &-desc {
+          max-width: 28.625rem;
+
+          h2 {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(large) {
+  .technology {
+    .main {
+      grid-template-areas:
+      'main__header empty'
+      'main__text main__image';
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 3rem 1fr;
+      row-gap: 8.5rem;
+
+      padding-top: 4rem;
+      padding-left: 2rem;
+      margin-top: 2rem;
+
+      &__header {
+        justify-self: end;
+        width: 100%;
+        max-width: 44.1rem;
+
+        padding-left: 0;
+      }
+
+      &__image {
+        picture {
+          max-width: 32.1875rem;
+          max-height: 32.9375rem;
+          margin-left: auto;
+          margin-top: 4.5rem;
+        }
+      }
+      
+      &__text {
+        flex-direction: row;
+
+        margin-left: auto;
+
+        min-width: 594px;
+
+        &-nav {
+          ul {
+            flex-direction: column;
+            gap: 2rem;
+          }
+        }
+
+        &-desc {
+          max-width: 30rem;
+
+          min-height: 324px;
+
+          .desc {
+            max-width: 27.75rem;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media(min-width:1240px) {
+  .technology {
+    .main {
+      padding-left: 8rem;
+    }
+  }
+}

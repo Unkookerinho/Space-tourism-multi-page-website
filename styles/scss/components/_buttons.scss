@@ -1,0 +1,128 @@
+@use '../abstracts/mixins' as *;
+
+//// Navbar button
+button.menu {
+  // Hamburger button styling
+  cursor: pointer;
+  border: none;
+  background: url(/assets/shared/icon-hamburger.svg) no-repeat center;
+  width: 1.5rem;
+  height: 1.3125rem;
+  z-index: 1001; // Making sure it stays on top of active navbar
+
+  // Adding smooth background change on activating
+  transition: background 0.2s;
+
+  &.active {
+    // Changing hamburger icon to close icon on active
+    background: url(/assets/shared/icon-close.svg) no-repeat center;
+  }
+}
+
+
+//// Explore button
+button.explore {
+  cursor: pointer;
+  position: relative;
+  // Button styling
+  border: none;
+  border-radius: 50%;
+  // Button shape
+  width: 9.375rem;
+  height: 9.375rem;
+
+  // Hover effect with pseudoelement
+  &::before {
+    content: '';
+    // Hover effect positioning
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    // Hover effect styling
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    background-color: hsl(var(--clr-white) / .1);
+    // Smooth animation
+    transition: width 0.5s, height 0.5s;
+  }
+  
+  // Expanding pseudoelement on hover
+  &:hover::before {
+    width: 160%;
+    height: 160%;
+
+  }
+}
+
+//// Dot button
+button.dot {
+  cursor: pointer;
+  height: 0.625rem;
+  width: 0.625rem;
+
+  border: none;
+  border-radius: 999px;
+
+  background-color: hsl(var(--clr-white) / .15);
+
+  &:hover {
+    background-color: hsl(var(--clr-white) / .45);
+  }
+
+  &.active {
+    background-color: hsl(var(--clr-white));
+  }
+}
+
+button.num {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+
+  border: 1px solid hsl(var(--clr-white) / .25);
+  border-radius: 999px;
+
+  background: none;
+  color: white;
+
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: white;
+  }
+
+  &.active {
+    background-color: white;
+    color: black;
+  }
+}
+
+// Responsive buttons size
+@include media(medium) {
+  button.explore {
+    width: 15.125rem;
+    height: 15.125rem;
+  }
+
+  button.num {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+}
+@include media(large) {
+  button.explore {
+    width: 17.125rem;
+    height: 17.125rem;
+  }
+  button.dot {
+    width: 0.9375rem;
+    height: 0.9375rem;
+  }
+  button.num {
+    width: 5rem;
+    height: 5rem;
+  }
+}

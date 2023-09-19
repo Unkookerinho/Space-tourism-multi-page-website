@@ -1,0 +1,85 @@
+@use 'mixins' as *;
+
+:root {
+  // Colors
+  --clr-dark: 230 35% 7%;
+  --clr-light: 231 77% 90%;
+  --clr-white: 0 0% 100%;
+
+  // Font families
+  --ff-serif: 'Bellefair', serif;
+  --ff-sans: 'Barlow', sans-serif;
+  --ff-sans-cond: 'Barlow Condensed', sans-serif;
+    
+  // Font sizes
+  --fs-900: 5rem;
+  --fs-800: 3.5rem;
+  --fs-750: 1.75rem;
+  --fs-700: 1.5rem;
+  --fs-600: 1.25rem;
+  --fs-500: 1rem;
+  --fs-400: 0.9375rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+  --fs-100: 0.875rem;
+
+  // Font weights
+  --fw-thin: 300;
+  --fw-regular: 400;
+  --fw-bold: 600; 
+
+  // Line height
+  --lh-1: 1.5625rem;
+  --lh-2: 125%;
+
+  // Letter spacing
+  
+  --ls-100: 0.07813rem;
+  --ls-200: 0.14763rem;
+  --ls-300: 0.14763rem;
+  --ls-400: 0.16875rem;
+  --ls-500: 0.16875rem;
+}
+
+// Responsive font
+@include media(medium) {
+  :root {
+    // Font sizes
+    --fs-900: 9.375rem;
+    --fs-800: 5rem;
+    --fs-700: 2.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --fs-300: 0.875rem;
+    --fs-200: 1rem;
+
+    // Line height
+    --lh-1: 1.75rem;
+    --lh-2: 100%;
+
+    // Letter spacing
+    --ls-100: 0.125rem;
+    --ls-500: 0.14763rem;
+    --ls-200: 0.16875rem;
+    --ls-400: 0.21094rem;
+  }
+}
+
+@include media(large) {
+  :root {
+    // Font sizes
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+
+    // Line height
+    --lh-1: 2rem;
+
+    // Letter spacing
+    --ls-500: 0.16875rem;
+    --ls-400: 0.29531rem;
+  }
+}

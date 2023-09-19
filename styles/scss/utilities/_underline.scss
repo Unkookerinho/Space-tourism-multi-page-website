@@ -1,0 +1,31 @@
+// LIST HOVER
+.underline {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    
+    top: 97%;
+    right: 50%;
+    transform: translateX(50%);
+
+    height: 3px;
+    background: hsl(var(--clr-white) / 0.5);
+
+    width: 0%;
+    transition: width 0.3s;
+  }
+  
+  &:hover::after {
+    width: 100%;
+  }
+  
+  &.active {
+    color: hsl(var(--clr-white));
+    &::after {
+      width: 100%;
+      background: hsl(var(--clr-white));
+    }
+  }
+}

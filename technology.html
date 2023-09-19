@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Space tourism website</title>
+    <!-- LINK FAVICON -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon-32x32.png"
+    />
+    <!-- LINK FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@300;400;600&family=Bellefair&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="styles/css/style.min.css" />
+  </head>
+  <body class="technology">
+    <!-- HEADER -->
+    <header>
+      <!-- LOGO -->
+      <a href="index.html"
+        ><img class="logo" src="assets/shared/logo.svg" alt="Logo"
+      /></a>
+      <!-- NAVBAR -->
+      <nav>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="fs-300 fw-thin ff-sans-cond ls-500 uppercase clr-white"
+              ><span class="fw-bold">00</span>Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="destination.html"
+              class="fs-300 fw-thin ff-sans-cond ls-500 uppercase clr-white"
+              ><span class="fw-bold">01</span>Destination</a
+            >
+          </li>
+          <li>
+            <a
+              href="crew.html"
+              class="fs-300 fw-thin ff-sans-cond ls-500 uppercase clr-white"
+              ><span class="fw-bold">02</span>Crew</a
+            >
+          </li>
+          <li class="active">
+            <a
+              href="technology.html"
+              class="fs-300 fw-thin ff-sans-cond ls-500 uppercase clr-white"
+              ><span class="fw-bold">03</span>Technology</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- MENU BUTTON -->
+      <button class="menu">
+        <span class="sr-only">Menu</span>
+      </button>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <div class="main__header">
+        <h1
+          class="numbered uppercase fs-500 ff-sans-cond ls-400 fw-thin clr-white"
+        >
+          <span class="fw-bold">03</span>Space launch 101
+        </h1>
+      </div>
+      <div class="main__image">
+        <picture class="1 vehicle interactive active"
+          ><source
+            media="(min-width: 1024px)"
+            srcset="assets/technology/image-launch-vehicle-portrait.jpg" />
+          <img
+            src="assets/technology/image-launch-vehicle-landscape.jpg"
+            alt="picutre of launching vehicle"
+        /></picture>
+        <picture class="2 spaceport interactive"
+          ><source
+            media="(min-width: 1024px)"
+            srcset="assets/technology/image-spaceport-portrait.jpg" />
+          <img
+            src="assets/technology/image-spaceport-landscape.jpg"
+            alt="picutre of site of launching"
+        /></picture>
+        <picture class="3 capsule interactive"
+          ><source
+            media="(min-width: 1024px)"
+            srcset="assets/technology/image-space-capsule-portrait.jpg" />
+          <img
+            src="assets/technology/image-space-capsule-landscape.jpg"
+            alt="picture of space capsule in space"
+        /></picture>
+      </div>
+      <div class="main__text">
+        <div class="main__text-nav">
+          <ul>
+            <li>
+              <button class="num active" id="option">
+                <span class="fs-500 ff-serif">1</span>
+              </button>
+            </li>
+            <li>
+              <button class="num" id="option">
+                <span class="fs-500 ff-serif">2</span>
+              </button>
+            </li>
+            <li>
+              <button class="num" id="option">
+                <span class="fs-500 ff-serif">3</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="main__text-desc">
+          <h2 class="fs-200 ff-sans-cond clr-light uppercase ls-200">
+            The terminology...
+          </h2>
+          <!-- Vehicle -->
+          <p class="1 interactive active uppercase ff-serif fs-700 clr-white">
+            Launch vehicle
+          </p>
+
+          <p class="1 interactive active lh-1 desc">
+            A launch vehicle or carrier rocket is a rocket-propelled vehicle
+            used to carry a payload from Earth's surface to space, usually to
+            Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful
+            in operation. Standing 150 metres tall, it's quite an awe-inspiring
+            sight on the launch pad!
+          </p>
+          <!-- Spaceport -->
+          <p class="2 interactive uppercase ff-serif fs-700 clr-white">
+            Spaceport
+          </p>
+
+          <p class="2 interactive lh-1 desc">
+            A spaceport or cosmodrome is a site for launching (or receiving)
+            spacecraft, by analogy to the seaport for ships or airport for
+            aircraft. Based in the famous Cape Canaveral, our spaceport is
+            ideally situated to take advantage of the Earth’s rotation for
+            launch.
+          </p>
+          <!-- Capsule -->
+          <p class="3 interactive uppercase ff-serif fs-700 clr-white">
+            Space capsule
+          </p>
+
+          <p class="3 interactive lh-1 desc">
+            A space capsule is an often-crewed spacecraft that uses a blunt-body
+            reentry capsule to reenter the Earth's atmosphere without wings. Our
+            capsule is where you'll spend your time during the flight. It
+            includes a space gym, cinema, and plenty of other activities to keep
+            you entertained.
+          </p>
+        </div>
+      </div>
+    </main>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/tabs.js"></script>
+  </body>
+</html>
