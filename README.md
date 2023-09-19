@@ -8,5 +8,5 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://www.frontendmentor.io/solutions/space-tourism-website-solution-fzD6LIcfaW
+- Live Site URL: https://unkookerinho-space-tourism.netlify.app
