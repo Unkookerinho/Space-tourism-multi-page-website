@@ -80,22 +80,26 @@
       <!-- IMAGE -->
       <div class="main__image">
         <img
-          class="douglas interactive-image active"
+          class="interactive active"
+          id="douglas"
           src="assets/crew/image-douglas-hurley.webp"
           alt="Douglas Hurley image"
         />
         <img
-          class="victor interactive-image"
+          class="interactive"
+          id="victor"
           src="assets/crew/image-victor-glover.webp"
           alt="Victor Glover image"
         />
         <img
-          class="mark interactive-image"
+          class="interactive"
+          id="mark"
           src="assets/crew/image-mark-shuttleworth.webp"
           alt="Mark Shuttleworth image"
         />
         <img
-          class="anousheh interactive-image"
+          class="interactive"
+          id="anousheh"
           src="assets/crew/image-anousheh-ansari.webp"
           alt="Anousheh Ansari image"
         />
@@ -107,22 +111,22 @@
         <div class="main__text-nav">
           <ul>
             <li>
-              <button class="dot active" id="option">
+              <button class="dot active" id="option" data-target="douglas">
                 <span class="sr-only">douglas</span>
               </button>
             </li>
             <li>
-              <button class="dot" id="option">
+              <button class="dot" id="option" data-target="victor">
                 <span class="sr-only">victor</span>
               </button>
             </li>
             <li>
-              <button class="dot" id="option">
+              <button class="dot" id="option" data-target="mark">
                 <span class="sr-only">mark</span>
               </button>
             </li>
             <li>
-              <button class="dot" id="option">
+              <button class="dot" id="option" data-target="anousheh">
                 <span class="sr-only">anousheh</span>
               </button>
             </li>
@@ -131,26 +135,32 @@
         <!-- Text -->
         <div class="main__text-desc">
           <!-- Douglas -->
-          <h2 class="uppercase ff-serif fs-500 interactive douglas active">
+          <h2 class="uppercase ff-serif fs-500 interactive active" id="douglas">
             Commander
           </h2>
           <p
-            class="uppercase ff-serif fs-700 clr-white interactive douglas active"
+            class="uppercase ff-serif fs-700 clr-white interactive active"
+            id="douglas"
           >
             Douglas Hurley
           </p>
-          <p class="lh-1 interactive douglas active desc">
+          <p class="lh-1 interactive active desc" id="douglas">
             Douglas Gerald Hurley is an American engineer, former Marine Corps
             pilot and former NASA astronaut. He launched into space for the
             third time as commander of Crew Dragon Demo-2.
           </p>
 
           <!-- Victor -->
-          <h2 class="uppercase ff-serif fs-500 interactive victor">Pilot</h2>
-          <p class="uppercase ff-serif fs-700 clr-white interactive victor">
+          <h2 class="uppercase ff-serif fs-500 interactive" id="victor">
+            Pilot
+          </h2>
+          <p
+            class="uppercase ff-serif fs-700 clr-white interactive"
+            id="victor"
+          >
             Victor Glover
           </p>
-          <p class="lh-1 interactive victor desc">
+          <p class="lh-1 interactive desc" id="victor">
             Pilot on the first operational flight of the SpaceX Crew Dragon to
             the International Space Station. Glover is a commander in the U.S.
             Navy where he pilots an F/A-18.He was a crew member of Expedition
@@ -158,13 +168,13 @@
           </p>
 
           <!-- Mark -->
-          <h2 class="uppercase ff-serif fs-500 interactive mark">
+          <h2 class="uppercase ff-serif fs-500 interactive" id="mark">
             Mission Specialist
           </h2>
-          <p class="uppercase ff-serif fs-700 clr-white interactive mark">
+          <p class="uppercase ff-serif fs-700 clr-white interactive" id="mark">
             Mark Shuttleworth
           </p>
-          <p class="lh-1 interactive mark desc">
+          <p class="lh-1 interactive desc" id="mark">
             Mark Richard Shuttleworth is the founder and CEO of Canonical, the
             company behind the Linux-based Ubuntu operating system. Shuttleworth
             became the first South African to travel to space as a space
@@ -172,13 +182,16 @@
           </p>
 
           <!-- Anousheh -->
-          <h2 class="uppercase ff-serif fs-500 interactive anousheh">
+          <h2 class="uppercase ff-serif fs-500 interactive" id="anousheh">
             Flight Engineer
           </h2>
-          <p class="uppercase ff-serif fs-700 clr-white interactive anousheh">
+          <p
+            class="uppercase ff-serif fs-700 clr-white interactive"
+            id="anousheh"
+          >
             Anousheh Ansari
           </p>
-          <p class="lh-1 interactive anousheh desc">
+          <p class="lh-1 interactive desc" id="anousheh">
             Anousheh Ansari is an Iranian American engineer and co-founder of
             Prodea Systems. Ansari was the fourth self-funded space tourist, the
             first self-funded woman to fly to the ISS, and the first Iranian in
