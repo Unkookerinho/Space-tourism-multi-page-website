@@ -63,6 +63,7 @@ body {
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
   color: hsl(var(--clr-light));
+  background: hsl(var(--clr-dark));
 }
 
 *, *::before, *::after {
