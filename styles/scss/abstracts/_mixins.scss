@@ -10,12 +10,12 @@
 // Background change
 @mixin background($page, $small-link, $medium-link, $large-link) {
   .#{$page} {
-    background: url($small-link) center/cover no-repeat;
+    background: url($small-link) center/cover no-repeat, hsl(var(--clr-dark));
   }
   @include media(medium) {
-    .#{$page} { background: url($medium-link) center/cover no-repeat; }
+    .#{$page} { background: url($medium-link) center/cover no-repeat, hsl(var(--clr-dark)); }
   }
   @include media(large) {
-    .#{$page} { background: url($large-link) center/cover no-repeat; }
+    .#{$page} { background: url($large-link) center/cover no-repeat, hsl(var(--clr-dark)); }
   }
 };
