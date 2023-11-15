@@ -1,16 +1,7 @@
 @use '../abstracts/mixins' as *;
 
-// Background image
-@include background(
-'home', 
-'/assets/home/background-home-mobile.jpg', 
-'/assets/home/background-home-tablet.jpg', 
-'/assets/home/background-home-desktop.jpg'
-);
-
-// Layout
-
 .home {
+  background: url('/assets/home/background-home-mobile.jpg') center/cover no-repeat;
   .main {
     display: grid;
     grid-template-areas:
@@ -53,6 +44,7 @@
 
 @include media(medium) {
   .home {
+    background: url('/assets/home/background-home-tablet.jpg') center/cover no-repeat;
     .main {
       gap: 10rem;
 
@@ -70,6 +62,7 @@
 
 @include media(large) {
   .home {
+    background: url('/assets/home/background-home-desktop.jpg') center/cover no-repeat;
     .main {
       grid-template-areas: 
         'main__text main__button';
