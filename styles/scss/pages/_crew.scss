@@ -1,7 +1,14 @@
 @use '../abstracts/mixins' as *;
 
+// Background image
+@include background(
+'crew', 
+'/assets/crew/background-crew-mobile.jpg', 
+'/assets/crew/background-crew-tablet.jpg', 
+'/assets/crew/background-crew-desktop.jpg'
+);
+
 .crew {
-  background: url('/assets/crew/background-crew-mobile.jpg') center/cover no-repeat;
   .main {
     display: grid;
     grid-template-areas:
@@ -75,7 +82,6 @@
 
 @include media(medium) {
   .crew {
-    background: url('/assets/crew/background-crew-tablet.jpg') center/cover no-repeat;
     .main {
       grid-template-areas:
         'main__header'
@@ -119,7 +125,6 @@
 
 @include media(large) {
   .crew {
-    background: url('/assets/crew/background-crew-desktop.jpg') center/cover no-repeat;
     .main {
       grid-template-areas: 
       'main__header main__image'

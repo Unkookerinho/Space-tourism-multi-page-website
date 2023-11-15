@@ -6,3 +6,16 @@
     @content;
   }
 }
+
+// Background change
+@mixin background($page, $small-link, $medium-link, $large-link) {
+  .#{$page} {
+    background: url($small-link) center/cover no-repeat;
+  }
+  @include media(medium) {
+    .#{$page} { background: url($medium-link) center/cover no-repeat; }
+  }
+  @include media(large) {
+    .#{$page} { background: url($large-link) center/cover no-repeat; }
+  }
+};

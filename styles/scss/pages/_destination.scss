@@ -1,7 +1,14 @@
 @use '../abstracts/mixins' as *;
 
+// Background image
+@include background(
+'destination', 
+'/assets/destination/background-destination-mobile.jpg', 
+'/assets/destination/background-destination-tablet.jpg', 
+'/assets/destination/background-destination-desktop.jpg'
+);
+
 .destination {
-  background: url('/assets/destination/background-destination-mobile.jpg') center/cover no-repeat;
   .main {
     display: grid;
     grid-template-areas: 
@@ -80,7 +87,6 @@
 
 @include media(medium) {
   .destination {
-    background: url('/assets/destination/background-destination-tablet.jpg') center/cover no-repeat;
     .main {
       gap: 2.5rem;
 
@@ -120,8 +126,6 @@
 
 @include media(large) {
   .destination {
-    background: url('/assets/destination/background-destination-desktop.jpg') center/cover no-repeat;
-
     .main {
       grid-template-areas: 
       'main__header empty'

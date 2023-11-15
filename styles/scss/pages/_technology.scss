@@ -1,7 +1,14 @@
 @use '../abstracts/mixins' as *;
 
+// Background image
+@include background(
+'technology', 
+'/assets/technology/background-technology-mobile.jpg', 
+'/assets/technology/background-technology-tablet.jpg', 
+'/assets/technology/background-technology-desktop.jpg'
+);
+
 .technology {
-  background: url('/assets/technology/background-technology-mobile.jpg') center/cover no-repeat;
   .main {
     display: grid;
     grid-template-areas:
@@ -55,7 +62,6 @@
 
 @include media(medium) {
   .technology {
-    background: url('/assets/technology/background-technology-tablet.jpg') center/cover no-repeat;
     .main {
       gap: 2.75rem;
       padding-block: 2rem;
@@ -82,7 +88,6 @@
 
 @include media(large) {
   .technology {
-    background: url('/assets/technology/background-technology-desktop.jpg') center/cover no-repeat;
     .main {
       grid-template-areas:
       'main__header empty'

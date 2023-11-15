@@ -305,6 +305,17 @@ header nav.active {
 .home {
   background: url("/assets/home/background-home-mobile.jpg") center/cover no-repeat;
 }
+
+@media (min-width: 35em) {
+  .home {
+    background: url("/assets/home/background-home-tablet.jpg") center/cover no-repeat;
+  }
+}
+@media (min-width: 64em) {
+  .home {
+    background: url("/assets/home/background-home-desktop.jpg") center/cover no-repeat;
+  }
+}
 .home .main {
   display: grid;
   grid-template-areas: "main__text" "main__button";
@@ -332,9 +343,6 @@ header nav.active {
 }
 
 @media (min-width: 35em) {
-  .home {
-    background: url("/assets/home/background-home-tablet.jpg") center/cover no-repeat;
-  }
   .home .main {
     gap: 10rem;
     margin-top: 1.5rem;
@@ -346,9 +354,6 @@ header nav.active {
   }
 }
 @media (min-width: 64em) {
-  .home {
-    background: url("/assets/home/background-home-desktop.jpg") center/cover no-repeat;
-  }
   .home .main {
     grid-template-areas: "main__text main__button";
     align-items: end;
@@ -365,6 +370,17 @@ header nav.active {
 }
 .destination {
   background: url("/assets/destination/background-destination-mobile.jpg") center/cover no-repeat;
+}
+
+@media (min-width: 35em) {
+  .destination {
+    background: url("/assets/destination/background-destination-tablet.jpg") center/cover no-repeat;
+  }
+}
+@media (min-width: 64em) {
+  .destination {
+    background: url("/assets/destination/background-destination-desktop.jpg") center/cover no-repeat;
+  }
 }
 .destination .main {
   display: grid;
@@ -424,9 +440,6 @@ header nav.active {
 }
 
 @media (min-width: 35em) {
-  .destination {
-    background: url("/assets/destination/background-destination-tablet.jpg") center/cover no-repeat;
-  }
   .destination .main {
     gap: 2.5rem;
     padding: 2rem;
@@ -454,9 +467,6 @@ header nav.active {
   }
 }
 @media (min-width: 64em) {
-  .destination {
-    background: url("/assets/destination/background-destination-desktop.jpg") center/cover no-repeat;
-  }
   .destination .main {
     grid-template-areas: "main__header empty" "main__image main__text";
     grid-template-columns: 1fr 1fr;
@@ -499,6 +509,17 @@ header nav.active {
 }
 .crew {
   background: url("/assets/crew/background-crew-mobile.jpg") center/cover no-repeat;
+}
+
+@media (min-width: 35em) {
+  .crew {
+    background: url("/assets/crew/background-crew-tablet.jpg") center/cover no-repeat;
+  }
+}
+@media (min-width: 64em) {
+  .crew {
+    background: url("/assets/crew/background-crew-desktop.jpg") center/cover no-repeat;
+  }
 }
 .crew .main {
   display: grid;
@@ -553,9 +574,6 @@ header nav.active {
 }
 
 @media (min-width: 35em) {
-  .crew {
-    background: url("/assets/crew/background-crew-tablet.jpg") center/cover no-repeat;
-  }
   .crew .main {
     grid-template-areas: "main__header" "main__text" "main__image";
     gap: 2.5rem;
@@ -584,9 +602,6 @@ header nav.active {
   }
 }
 @media (min-width: 64em) {
-  .crew {
-    background: url("/assets/crew/background-crew-desktop.jpg") center/cover no-repeat;
-  }
   .crew .main {
     grid-template-areas: "main__header main__image" "main__text main__image";
     grid-template-columns: 1fr 1fr;
@@ -633,6 +648,17 @@ header nav.active {
 .technology {
   background: url("/assets/technology/background-technology-mobile.jpg") center/cover no-repeat;
 }
+
+@media (min-width: 35em) {
+  .technology {
+    background: url("/assets/technology/background-technology-tablet.jpg") center/cover no-repeat;
+  }
+}
+@media (min-width: 64em) {
+  .technology {
+    background: url("/assets/technology/background-technology-desktop.jpg") center/cover no-repeat;
+  }
+}
 .technology .main {
   display: grid;
   grid-template-areas: "main__header" "main__image" "main__text";
@@ -671,9 +697,6 @@ header nav.active {
 }
 
 @media (min-width: 35em) {
-  .technology {
-    background: url("/assets/technology/background-technology-tablet.jpg") center/cover no-repeat;
-  }
   .technology .main {
     gap: 2.75rem;
     padding-block: 2rem;
@@ -693,9 +716,6 @@ header nav.active {
   }
 }
 @media (min-width: 64em) {
-  .technology {
-    background: url("/assets/technology/background-technology-desktop.jpg") center/cover no-repeat;
-  }
   .technology .main {
     grid-template-areas: "main__header empty" "main__text main__image";
     grid-template-columns: 1fr 1fr;
